@@ -7,7 +7,13 @@ public class Challenge1{
 
 	public static void main(String[] args){
         
-        //instantiation of Scanner class
+       Prompter();
+       
+	}
+
+	public static string Prompter {
+
+		//instantiation of Scanner class
         Scanner sc = new Scanner(System.in);
 
         //prompting the user
@@ -27,8 +33,6 @@ public class Challenge1{
         System.out.print("How far is your favourite store from your home? ");
         String distance_from_store = sc.nextLine();
 
-        //displaying to the user
-        System.out.print("Your full name is "+ name + " " + surname + " and you were born in " + dob + "\nYour favourite store is " + distance_from_store + " away from your house.");
-       
+        return "Your full name is "+ name + " " + surname + " and you were born in " + dob + "\nYour favourite store is " + distance_from_store + " away from your house.";
 	}
 }
