@@ -1,7 +1,7 @@
 public class IfTest4 {
     public static void main(String[] args) {
 
-        if(getA() && getB()){
+        if(getA() || getB()){
             System.out.println("COOL");
         }
        
@@ -16,7 +16,7 @@ public class IfTest4 {
 
     static boolean getB() {
         System.out.println("Fetching b.");
-        return true;
+        return false;
 
     }
 }

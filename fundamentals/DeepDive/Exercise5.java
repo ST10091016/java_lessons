@@ -8,6 +8,7 @@ public class Exercise5{
         
         //calling the print method with its parameters
         Printer.print(name, grade);
-		
+	
+
 	}
 }
