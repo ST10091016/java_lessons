@@ -28,7 +28,7 @@ public class NumberValidator{
 
       }catch(Exception error){
           
-          System.out.print("\nError! Enter a valid second number.\n");
+         // System.out.print("\nError! Enter a valid second number.\n");
           return false;
       }
    }

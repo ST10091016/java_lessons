@@ -8,9 +8,13 @@ public class MenuValidator_Alternative{
            
            //cases for the input and has no breaks because they lead to the same result.
            case 1:	
-           case 2:   
+            operandsAndOperator(input);
+           case 2: 
+            operandsAndOperator(input);  
            case 3:
+            operandsAndOperator(input);
            case 4:
+            operandsAndOperator(input);
            case 5:
 
             //calling the method
@@ -42,7 +46,8 @@ public class MenuValidator_Alternative{
           isValidNum1 = NumberValidator.isValid1(num1);
             
        }
-    
+      
+
        //while loop thats set to true and prompts the user, if the operator is false then an error message is displayed.
        while(true){
 
@@ -54,6 +59,7 @@ public class MenuValidator_Alternative{
 
            }else{
             
+
             //breaks our of the loop if the user inputs the correct operator.
             break;
            }
@@ -97,6 +103,7 @@ public class MenuValidator_Alternative{
             System.out.println("\nTotal: " + num1 + operator + num2 + " = " +  Modulus.modulus(Double.parseDouble(num1), Double.parseDouble(num2)));
         else{
             System.out.print("Error! Your operator does not match your selection from the menu.");
+            
         }
     }
 }

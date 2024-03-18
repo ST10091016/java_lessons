@@ -1,9 +1,8 @@
-public class MenuPrinter{
-    
-    //method that prints the menu to the user.
-	public static void printMenu(){
-     
-       //declare and initialise the variables.
+public class Menu{
+
+	public static boolean menu(){
+        
+        //declare and initialise the variables.
         boolean isValidFlag = true;
         String prompt = null;
         
@@ -19,7 +18,7 @@ public class MenuPrinter{
                
             //converting the string prompt into an int, so that it could be used in the validate method.
             int input = Integer.parseInt(prompt);
-            MenuValidator.validate(input);
+            MenuValidator_Alternative.validate(input);
             
             //if statement that checks if the input is greater than 6 or less and equal to 0.
             if(input > 6 || input <= 0){
@@ -36,8 +35,9 @@ public class MenuPrinter{
                //printing out the error to the user.
                System.out.print("Error! Please enter a number.\n");
             }
-         
-         //keeps looping if the prompt is empty or just keeps going until the prompt is false then it stops.
-        }while(prompt.isEmpty() || true);                
-    }
+
+        }while(prompt.isEmpty() || true);
+
+		return true;
+	}
 }
