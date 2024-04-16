@@ -36,12 +36,20 @@ public class Question9{
 
    //method that uses the nested for loops to check if the elements are even AND are divisable by 11.
    public static void evenAndEvelen(){
+
+      //declare and initialise variable row
       int row = 0;
+
+      //nested while loops that go through each outer and inner index
       while(row < num.length){
            int col = 0;
            while(col < num[row].length){
+
+                //checks if the row and col index is divisable by 2, if it has no remainder then it goes to the next switch
                 switch(num[row][col]%2){
                 case 0:
+
+                    //checks if the switch statements are true, if they are, then it prints out that value from the index
                     switch(num[row][col]%11){
                      case 0:
                       System.out.print(num[row][col] + " ");
@@ -52,6 +60,8 @@ public class Question9{
                 }
                 col++;
            }
+
+           //increment after the inner while loop is done
            row++;
        }
    }

@@ -12,6 +12,7 @@ public class Question1{
         //calling the methods and printing
 		System.out.print("\nArray before adding 1: ");
         print();
+        //printing to the cmd
         System.out.print("\n\nArray after adding 1: ");
         addOne();
         print();
@@ -26,6 +27,7 @@ public class Question1{
     
     //method that deals with adding 1 more to the values in the array.
 	public static void addOne(){
+		//for loop goes through the index of the array and prints each one added with 1
 		for(int i = 0; i < num.length; i++){
        	   num[i] = num[i] + 1;
        }

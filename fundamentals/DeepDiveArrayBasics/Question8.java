@@ -15,7 +15,6 @@ public class Question8{
       //calling the methods and printing
       System.out.print("2D array before adding 1: ");
       print();
-
       System.out.print("\n\n2D array that has even numbers and numbers divisable by 11: ");
       evenAndEvelen();
      
@@ -37,6 +36,10 @@ public class Question8{
 
    //method that uses the nested for loops to check if the elements are even AND are divisable by 11.
    public static void evenAndEvelen(){
+
+       /*the for loops iterate trhough the outer and inner elements/values through their indexes
+      to check if they are even AND can be divded by 11.
+      */
       for(int row = 0; row < num.length; row++){
            for(int col = 0; col < num[row].length; col++){
                 if((num[row][col]%2 == 0) && (num[row][col]%11 == 0)){

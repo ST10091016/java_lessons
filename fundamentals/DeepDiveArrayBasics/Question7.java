@@ -15,7 +15,7 @@ public class Question7{
       //calling the methods and printing
       System.out.print("2D array before adding 1: ");
       print();
-
+      //printing out to the cmd
       System.out.print("\n\n2D array after adding 1: ");
       addingOne();
       print();
@@ -24,10 +24,8 @@ public class Question7{
     //method that prints the array using a nested for loop
     public static void print(){
         
-        /*
-        for loop that goes through the rows and if the condition is true then 
-        go through the columns
-        */
+        /* for loop that goes through the rows and if the condition is true then 
+        go through the columns */
         for(int row = 0; row < num.length; row++){
            for(int col = 0; col < num[row].length; col++){
              System.out.print(num[row][col] + " ");
@@ -37,6 +35,8 @@ public class Question7{
     
     //method that adds 1 to each element in the array
     public static void addingOne(){
+
+        //each for loop goes through the index for the outer and inner and prints each one added with 1
         for(int row = 0; row < num.length; row++){
            for(int col = 0; col < num[row].length; col++){
              num[row][col] = num[row][col] + 1;

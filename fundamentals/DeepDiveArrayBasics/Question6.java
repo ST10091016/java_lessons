@@ -11,6 +11,7 @@ public class Question6{
         populate();
         System.out.print("\nArray after randomly populating: ");
         print();
+        //printing to the cmd
         System.out.print("\n\nEven numbers and numbers divisable by 11: ");
         evenAndEvelen();
     }
@@ -30,8 +31,13 @@ public class Question6{
        //instantiating an object for the random class, to access the methods
        Random random = new Random();
        
+       //declare and initialise variable
        int i = 0;
+
+       //uses the initialised variable to check if it is smaller than the length of the array
        while(i < num.length){
+
+          //populates the each index with a random int from 0 - 50
           num[i] = random.nextInt(50);
           i++;
        }
@@ -40,9 +46,16 @@ public class Question6{
      //method that prints out the even numbers and numbers divisable by 11 in the array.
     public static void evenAndEvelen(){
         
+        //declare and initialise variable 
         int i = 0;
+
+        //while loop that uses the variable and checks if it is less than the length of the array
         while(i < num.length){
+
+          //switch case that checks if the element of that index is divisable by 2
           switch(num[i]%2){
+
+            //if there is no remainder then it goes intonthe next switch case 
             case 0:
             switch(num[i]%11){
               case 0:
@@ -51,7 +64,7 @@ public class Question6{
             }
             break;
           }
-
+          //increments after the body
           i++;
        }
     }

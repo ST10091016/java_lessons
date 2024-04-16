@@ -12,7 +12,7 @@ public class Question3{
 	   //calling the methods and printing out.
 	   System.out.print("\nArray before: ");
 	   print();
-
+       //printing to the cmd
 	   System.out.print("\n\nEven numbers and numbers divisable by 11: ");
        evenAndEvelen();
 	}
@@ -32,8 +32,11 @@ public class Question3{
       //declaring and initialising the variable for the while loop
       int i = 0;
         while(i < num.length){
+
+        	//checks if index is divisable by 2, if it has no remainder then it goes to the next switch
             switch(num[i]%2){
             	case 0:
+            	 //checks if the switch statements is true, if it is, then it prints out that value from the index
             	switch(num[i]%11){
             	  case 0:
                    System.out.print(num[i] + " ");
@@ -41,7 +44,7 @@ public class Question3{
             	}
               break;
             }
-
+           //increments after the body
            i++;
        }
 	}	
